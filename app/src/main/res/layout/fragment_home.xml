@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:padding="@dimen/_10sdp">
+
+       <TextView
+           android:id="@+id/txtHello"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Hello, Nitin"
+           android:textStyle="bold"
+           android:paddingLeft="@dimen/_15sdp"
+           android:layout_marginBottom="@dimen/_7sdp"
+           android:textSize="@dimen/_20sdp"/>
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="@dimen/_20sdp"
+           android:layout_marginBottom="@dimen/_20sdp"
+           android:layout_margin="@dimen/_10sdp"
+           app:cardBackgroundColor="#EAF3FC">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="@dimen/_20sdp"
+               android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="@dimen/_16sdp"
+               android:text="Discover Your Perfect Career"
+               android:textStyle="bold"
+               android:textColor="@color/black"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="@dimen/_14sdp"
+               android:text="Guiding You to Your Ideal Professional Path."
+               android:textColor="@color/black"/>
+
+           </LinearLayout>
+       </androidx.cardview.widget.CardView>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/_7sdp">
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/homeTests"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_150sdp"
+               android:layout_weight="1"
+               android:layout_margin="@dimen/_10sdp"
+               app:cardCornerRadius="@dimen/_20sdp"
+               app:cardBackgroundColor="#F5E9FB">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="@dimen/_20sdp"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textSize="@dimen/_16sdp"
+                       android:text="Career Tests"
+                       android:textStyle="bold"
+                       android:textColor="@color/black"/>
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textSize="@dimen/_14sdp"
+                       android:text="Discover your professional path"
+                       android:textColor="@color/black"/>
+
+               </LinearLayout>
+           </androidx.cardview.widget.CardView>
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/homeExplore"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_150sdp"
+               android:layout_margin="@dimen/_10sdp"
+               android:layout_weight="1"
+               app:cardCornerRadius="@dimen/_20sdp"
+               app:cardBackgroundColor="#E7F4D9">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="@dimen/_20sdp"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textSize="@dimen/_16sdp"
+                       android:text="Explore"
+                       android:textStyle="bold"
+                       android:textColor="@color/black"/>
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textSize="@dimen/_14sdp"
+                       android:text="Gain insight into diverse career paths"
+                       android:textColor="@color/black"/>
+
+               </LinearLayout>
+           </androidx.cardview.widget.CardView>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/homeCounsellor"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_150sdp"
+               android:layout_weight="1"
+               android:layout_margin="@dimen/_10sdp"
+               app:cardCornerRadius="@dimen/_20sdp"
+               app:cardBackgroundColor="#FBE8E1">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="@dimen/_20sdp"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textSize="@dimen/_16sdp"
+                       android:text="Book Counsellor"
+                       android:textStyle="bold"
+                       android:textColor="@color/black"/>
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textSize="@dimen/_14sdp"
+                       android:text="Take in-depth career guidance sessions with experts"
+                       android:textColor="@color/black"/>
+
+               </LinearLayout>
+           </androidx.cardview.widget.CardView>
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/homeAboutUs"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_150sdp"
+               android:layout_margin="@dimen/_10sdp"
+               android:layout_weight="1"
+               app:cardCornerRadius="@dimen/_20sdp"
+               app:cardBackgroundColor="#E0F8EA">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="@dimen/_20sdp"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textSize="@dimen/_16sdp"
+                       android:text="Know About us"
+                       android:textStyle="bold"
+                       android:textColor="@color/black"/>
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textSize="@dimen/_14sdp"
+                       android:text="Your Career journey starts here"
+                       android:textColor="@color/black"/>
+
+               </LinearLayout>
+           </androidx.cardview.widget.CardView>
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

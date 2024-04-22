@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/profile_bg"
+    android:orientation="vertical"
+    tools:context=".ProfileFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/_50sdp"
+        android:paddingBottom="@dimen/_50sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samruddhi Deo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_27ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="msjkdncdkslnvdiu@hfmkdf"
+            android:textSize="@dimen/_15ssp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Edit Profile"
+            android:background="@drawable/profile_txts_bg"
+            android:drawableLeft="@drawable/baseline_account_circle_24"
+            android:drawableRight="@drawable/baseline_keyboard_arrow_right_24"
+            android:textSize="@dimen/_18ssp"
+            android:padding="@dimen/_11sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            />
+
+        <TextView
+            android:id="@+id/profileAboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   About us"
+            android:background="@drawable/profile_txts_bg"
+            android:drawableLeft="@drawable/baseline_info_24"
+            android:drawableRight="@drawable/baseline_keyboard_arrow_right_24"
+            android:textSize="@dimen/_18ssp"
+            android:padding="@dimen/_11sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   My Tests"
+            android:background="@drawable/profile_txts_bg"
+            android:drawableLeft="@drawable/baseline_tests"
+            android:drawableRight="@drawable/baseline_keyboard_arrow_right_24"
+            android:textSize="@dimen/_18ssp"
+            android:padding="@dimen/_11sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            />
+
+        <TextView
+            android:id="@+id/profileShareFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Share Feedback"
+            android:background="@drawable/profile_txts_bg"
+            android:drawableLeft="@drawable/baseline_feedback_24"
+            android:drawableRight="@drawable/baseline_keyboard_arrow_right_24"
+            android:textSize="@dimen/_18ssp"
+            android:padding="@dimen/_11sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            />
+
+        <TextView
+            android:id="@+id/profileLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Logout"
+            android:background="@drawable/profile_txts_bg"
+            android:drawableLeft="@drawable/baseline_logout_24"
+            android:drawableRight="@drawable/baseline_keyboard_arrow_right_24"
+            android:textSize="@dimen/_18ssp"
+            android:padding="@dimen/_11sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

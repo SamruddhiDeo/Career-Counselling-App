@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navHome"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"/>
+
+    <item android:id="@+id/navExplore"
+        android:icon="@drawable/baseline_explore_24"
+        android:title="Explore"/>
+
+    <item android:id="@+id/navTests"
+        android:icon="@drawable/baseline_tests"
+        android:title="Take Tests"/>
+
+    <item android:id="@+id/navCounsellor"
+        android:icon="@drawable/counsellor_icon"
+        android:title="Book Counsellor"/>
+
+    <item android:id="@+id/navProfile"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title="Profile"/>
+
+
+</menu>

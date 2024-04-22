@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_16sdp"
+    tools:context=".ResultFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test Result"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_16sdp">
+
+            <TextView
+                android:id="@+id/txtRecommendationA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Problem Solver"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/_2sdp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:progress="55"
+                android:max="100"
+                android:progressDrawable="@drawable/progress_bar_gradient"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_16sdp">
+
+            <TextView
+                android:id="@+id/txtRecommendationB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leadership Quality"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/_2sdp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:progress="20"
+                android:max="100"
+                android:progressDrawable="@drawable/progress_bar_gradient"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_16sdp">
+
+            <TextView
+                android:id="@+id/txtRecommendationC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Artistic"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/_2sdp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:progress="10"
+                android:max="100"
+                android:progressDrawable="@drawable/progress_bar_gradient"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_16sdp">
+
+            <TextView
+                android:id="@+id/txtRecommendationD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Social Collaborator"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/_2sdp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:progress="15"
+                android:max="100"
+                android:progressDrawable="@drawable/progress_bar_gradient"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suggestion"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:textSize="@dimen/_18ssp" />
+
+    <TextView
+        android:id="@+id/txtRecommendationMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your responses highlight problem-solving skills, particularly relevant in engineering and development contexts, coupled with a versatile skill set encompassing creative thinking, effective communication, and work-life balance, position you for success in fields such as engineering, software development, technology management, and related disciplines."
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:textSize="@dimen/_16ssp" />
+
+</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
