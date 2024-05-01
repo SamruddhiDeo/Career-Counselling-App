@@ -45,6 +45,8 @@ public class ProfileFragment extends Fragment {
         TextView profileLogout = view.findViewById(R.id.profileLogout);
         TextView profileAboutUs = view.findViewById(R.id.profileAboutUs);
         TextView profileShareFeedback = view.findViewById(R.id.profileShareFeedback);
+        TextView profileMyTests = view.findViewById(R.id.profileMyTests);
+        TextView profileMyCounsellors = view.findViewById(R.id.profileMyCounsellors);
 
         SharedPreferences prefs = getActivity().getSharedPreferences("user_session",MODE_PRIVATE);
         profileName.setText(prefs.getString("name","null"));
@@ -54,6 +56,20 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View v) {
               loadFragment(new AboutUsFragment());
+            }
+        });
+
+        profileMyTests.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadFragment(new ViewResultFragment());
+            }
+        });
+
+        profileMyCounsellors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadFragment(new BookedCounsellorFragment());
             }
         });
 

@@ -3,10 +3,19 @@ package com.example.careercounsellor;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.careercounsellor.Adapters.CounsellorAdapter;
+import com.example.careercounsellor.ModelClasses.CounsellorModel;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +68,26 @@ public class CounsellorFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_counsellor, container, false);
+        View view = inflater.inflate(R.layout.fragment_counsellor, container, false);
+
+        ArrayList<CounsellorModel> arrCounsellors = new ArrayList<>();
+
+        arrCounsellors.add(new CounsellorModel(R.drawable.counsellor1, "David Pal", "4.5⭐","Rs.2000"));
+        arrCounsellors.add(new CounsellorModel(R.drawable.counsellor2, "John Blanchard", "4.9⭐","Rs.3000"));
+        arrCounsellors.add(new CounsellorModel(R.drawable.counsellor3, "Ricky Gill", "4.4⭐","Rs.1500"));
+        arrCounsellors.add(new CounsellorModel(R.drawable.counsellor4, "Robin Mayer", "4.8⭐","Rs.2500"));
+        arrCounsellors.add(new CounsellorModel(R.drawable.counsellor5, "Jordan Fischer", "4.7⭐","Rs.1800"));
+        arrCounsellors.add(new CounsellorModel(R.drawable.counsellor6, "Albert Davila", "5.0⭐","Rs.3000"));
+        arrCounsellors.add(new CounsellorModel(R.drawable.counsellor7, "Charles Harmon", "4.7⭐","Rs.1200"));
+
+        RecyclerView recyclerViewCounsellors = view.findViewById(R.id.recyclerViewCounsellors);
+        recyclerViewCounsellors.setLayoutManager(new LinearLayoutManager(getContext()));
+        CounsellorAdapter counsellorAdapter = new CounsellorAdapter(getContext(),arrCounsellors,getParentFragmentManager());
+        recyclerViewCounsellors.setAdapter(counsellorAdapter);
+
+        return view;
     }
+
+
+
 }

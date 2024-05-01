@@ -5,8 +5,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:gravity="center"
     tools:context=".HomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:elevation="@dimen/_4sdp"
+        android:background="@color/toolbar_color"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crete_round"
+            android:text="Career Counsellor"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp" />
+
+    </androidx.appcompat.widget.Toolbar>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -16,6 +33,7 @@
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:orientation="vertical"
+       android:layout_marginTop="@dimen/_15sdp"
        android:padding="@dimen/_10sdp">
 
        <TextView

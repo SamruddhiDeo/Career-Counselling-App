@@ -4,8 +4,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="@dimen/_12sdp"
+    android:orientation="vertical"
     tools:context=".ExploreFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:elevation="@dimen/_4sdp"
+        android:background="@color/toolbar_color"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crete_round"
+            android:text="Explore"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_12sdp">
+
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -224,134 +249,104 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/suggestionResume"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/_10sdp"
-                        android:layout_gravity="center_vertical">
+                        android:orientation="vertical">
 
-                      <androidx.cardview.widget.CardView
-                        android:layout_width="@dimen/_110sdp"
-                        android:layout_height="@dimen/_110sdp"
-                        android:layout_gravity="center"
-                        android:elevation="7dp"
-                        app:cardBackgroundColor="@color/light_app_color">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/_110sdp"
+                            android:layout_height="@dimen/_110sdp"
+                            android:layout_gravity="center"
+                            android:elevation="7dp"
+                            app:cardBackgroundColor="@color/light_app_color">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/suggestionimg1" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/suggestionimg1" />
 
-                    </androidx.cardview.widget.CardView>
+                        </androidx.cardview.widget.CardView>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_3sdp"
                             android:text="Resume Tips"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="@dimen/_3sdp"
-                            android:textSize="@dimen/_13sdp"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
 
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/suggestionInterview"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/_10sdp"
-                        android:layout_gravity="center_vertical">
+                        android:orientation="vertical">
 
-                      <androidx.cardview.widget.CardView
-                        android:layout_width="@dimen/_110sdp"
-                        android:layout_height="@dimen/_110sdp"
-                        android:layout_gravity="center"
-                        android:elevation="7dp"
-                        app:cardBackgroundColor="@color/light_app_color">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/_110sdp"
+                            android:layout_height="@dimen/_110sdp"
+                            android:layout_gravity="center"
+                            android:elevation="7dp"
+                            app:cardBackgroundColor="@color/light_app_color">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/suggestionimg2" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/suggestionimg2" />
 
-                    </androidx.cardview.widget.CardView>
+                        </androidx.cardview.widget.CardView>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_3sdp"
                             android:text="Interview Preparation"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="@dimen/_3sdp"
-                            android:textSize="@dimen/_13sdp"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
 
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/suggestionJobSearch"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/_10sdp"
-                        android:layout_gravity="center_vertical">
+                        android:orientation="vertical">
 
-                      <androidx.cardview.widget.CardView
-                        android:layout_width="@dimen/_110sdp"
-                        android:layout_height="@dimen/_110sdp"
-                        android:layout_gravity="center"
-                        android:elevation="7dp"
-                        app:cardBackgroundColor="@color/light_app_color">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/_110sdp"
+                            android:layout_height="@dimen/_110sdp"
+                            android:layout_gravity="center"
+                            android:elevation="7dp"
+                            app:cardBackgroundColor="@color/light_app_color">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/suggestionimg4" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/suggestionimg4" />
 
-                    </androidx.cardview.widget.CardView>
+                        </androidx.cardview.widget.CardView>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="Guidance"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="@dimen/_3sdp"
-                            android:textSize="@dimen/_13sdp"
-                            android:textColor="@color/black"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_margin="@dimen/_10sdp"
-                        android:layout_gravity="center_vertical">
-
-                      <androidx.cardview.widget.CardView
-                        android:layout_width="@dimen/_110sdp"
-                        android:layout_height="@dimen/_110sdp"
-                        android:layout_gravity="center"
-                        android:elevation="7dp"
-                        app:cardBackgroundColor="@color/light_app_color">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/suggestionimg3" />
-
-                    </androidx.cardview.widget.CardView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
                             android:text="Guidance"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="@dimen/_3sdp"
-                            android:textSize="@dimen/_13sdp"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
 
                     </LinearLayout>
 
@@ -553,5 +548,5 @@
 
     </ScrollView>
 
-
+    </LinearLayout>
 </LinearLayout>

@@ -6,6 +6,33 @@
     android:orientation="vertical"
     tools:context=".AboutUsFragment">
 
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:elevation="@dimen/_4sdp"
+        android:background="@color/toolbar_color"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:fontFamily="@font/crete_round"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/black"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -17,37 +44,11 @@
         android:padding="@dimen/_16sdp">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="What is Career Counselling?"
-            android:textStyle="bold"
-            android:textSize="@dimen/_21ssp"/>
-
-        <TextView
             android:layout_marginTop="@dimen/_6sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/whatisCC"
-            android:textSize="@dimen/_15ssp"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_2sdp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Why Career Counselling is important?"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:textStyle="bold"
-            android:textSize="@dimen/_21ssp"/>
-
-        <TextView
-            android:layout_marginTop="@dimen/_6sdp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/whyCCisImp"
-            android:textSize="@dimen/_15ssp"/>
+            android:textSize="@dimen/_20ssp"/>
 
     </LinearLayout>
 

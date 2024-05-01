@@ -40,20 +40,6 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="   Edit Profile"
-            android:background="@drawable/profile_txts_bg"
-            android:drawableLeft="@drawable/baseline_account_circle_24"
-            android:drawableRight="@drawable/baseline_keyboard_arrow_right_24"
-            android:textSize="@dimen/_18ssp"
-            android:padding="@dimen/_11sdp"
-            android:layout_marginLeft="@dimen/_16sdp"
-            android:layout_marginRight="@dimen/_16sdp"
-            android:layout_marginBottom="@dimen/_7sdp"
-            />
-
-        <TextView
             android:id="@+id/profileAboutUs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -69,9 +55,25 @@
             />
 
         <TextView
+            android:id="@+id/profileMyTests"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="   My Tests"
+            android:background="@drawable/profile_txts_bg"
+            android:drawableLeft="@drawable/baseline_tests"
+            android:drawableRight="@drawable/baseline_keyboard_arrow_right_24"
+            android:textSize="@dimen/_18ssp"
+            android:padding="@dimen/_11sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            />
+
+        <TextView
+            android:id="@+id/profileMyCounsellors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Counselling sessions"
             android:background="@drawable/profile_txts_bg"
             android:drawableLeft="@drawable/baseline_tests"
             android:drawableRight="@drawable/baseline_keyboard_arrow_right_24"

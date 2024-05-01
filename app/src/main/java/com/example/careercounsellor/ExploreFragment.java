@@ -69,6 +69,9 @@ public class ExploreFragment extends Fragment {
         LinearLayout careerDoctor = view.findViewById(R.id.careerDoctor);
         LinearLayout careerLawyer = view.findViewById(R.id.careerLawyer);
         LinearLayout careerGraphic = view.findViewById(R.id.careerGraphic);
+        LinearLayout suggestionResume = view.findViewById(R.id.suggestionResume);
+        LinearLayout suggestionInterview = view.findViewById(R.id.suggestionInterview);
+        LinearLayout suggestionJobSearch = view.findViewById(R.id.suggestionJobSearch);
 
         careerSoftware.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,6 +123,39 @@ public class ExploreFragment extends Fragment {
                 Bundle bundle = new Bundle();
                 bundle.putString("career", "graphic");
                 Fragment fragment = new InfoExploreFragment();
+                fragment.setArguments(bundle);
+                loadFragment(fragment);
+            }
+        });
+
+        suggestionResume.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putString("suggestion", "resume");
+                Fragment fragment = new SuggestionsExploreFragment();
+                fragment.setArguments(bundle);
+                loadFragment(fragment);
+            }
+        });
+
+        suggestionInterview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putString("suggestion", "interview");
+                Fragment fragment = new SuggestionsExploreFragment();
+                fragment.setArguments(bundle);
+                loadFragment(fragment);
+            }
+        });
+
+        suggestionJobSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putString("suggestion", "job search");
+                Fragment fragment = new SuggestionsExploreFragment();
                 fragment.setArguments(bundle);
                 loadFragment(fragment);
             }

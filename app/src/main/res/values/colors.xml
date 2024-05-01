@@ -5,5 +5,6 @@
     <color name="app_color">#5671e9</color>
     <color name="light_app_color">#7B93F8</color>
     <color name="profile_bg">#77FAFAFA</color>
+    <color name="toolbar_color">#F8F8F8</color>
 
 </resources>

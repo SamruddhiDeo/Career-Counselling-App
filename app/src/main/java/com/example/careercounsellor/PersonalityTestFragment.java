@@ -188,6 +188,7 @@ public class PersonalityTestFragment extends Fragment {
 
                     ResultFragment fragment = new ResultFragment();
                     Bundle args = new Bundle();
+                    args.putString("testType", "Personality test");
                     args.putDouble("Percent A", percentOptionA);
                     args.putDouble("Percent B", percentOptionB);
                     args.putDouble("Percent C", percentOptionC);
