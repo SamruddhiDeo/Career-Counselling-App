@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ViewResultFragment">
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:elevation="@dimen/_4sdp"
+        android:background="@color/toolbar_color"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Results"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/black"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/_11sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_31sdp"
+        android:elevation="@dimen/_11sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_20sdp"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aptitude test"
+            android:layout_marginBottom="@dimen/_11sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/aptitudeViewResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Result"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_bg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp"
+                android:paddingLeft="@dimen/_18sdp"
+                android:paddingRight="@dimen/_18sdp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/_11sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_31sdp"
+        android:elevation="@dimen/_11sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_20sdp"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personality test"
+            android:layout_marginBottom="@dimen/_11sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/personalityViewResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Result"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_bg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp"
+                android:paddingLeft="@dimen/_18sdp"
+                android:paddingRight="@dimen/_18sdp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+    
+
+</LinearLayout>

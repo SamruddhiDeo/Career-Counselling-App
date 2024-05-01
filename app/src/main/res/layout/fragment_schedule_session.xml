@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ScheduleSessionFragment">
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:elevation="@dimen/_4sdp"
+        android:background="@color/toolbar_color"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedule Session"
+            android:fontFamily="@font/crete_round"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/black"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="@dimen/_17ssp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <DatePicker
+        android:id="@+id/datePickerContainer"
+        android:datePickerMode="spinner"
+        android:spinnersShown="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="@dimen/_17ssp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3">
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8:00 AM"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:background="@drawable/counselling_time_bg"/>
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00 AM"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:background="@drawable/counselling_time_bg"/>
+
+        <TextView
+            android:id="@+id/time3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2:30 PM"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:background="@drawable/counselling_time_bg"/>
+
+        <TextView
+            android:id="@+id/time4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4:00 PM"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:background="@drawable/counselling_time_bg"/>
+
+        <TextView
+            android:id="@+id/time5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6:00 PM"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:background="@drawable/counselling_time_bg"/>
+
+        <TextView
+            android:id="@+id/time6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7:30 PM"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:background="@drawable/counselling_time_bg"/>
+
+
+
+
+    </GridLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type of Call"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="@dimen/_17ssp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/call1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Audio Call"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:background="@drawable/counselling_time_bg"/>
+
+        <TextView
+            android:id="@+id/call2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video Call"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:background="@drawable/counselling_time_bg"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirmCounsellor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_bg"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_16ssp"/>
+
+    </LinearLayout>
+</LinearLayout>

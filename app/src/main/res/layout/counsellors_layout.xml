@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/_10sdp"
+    android:id="@+id/bookedCounsellorMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/bookedCounsellorImg"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/counsellor1"/>
+
+    <TextView
+        android:id="@+id/bookedCounsellorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:text="TextView"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bookedCounsellorImg"
+        app:layout_constraintStart_toEndOf="@+id/bookedCounsellorImg"
+        app:layout_constraintTop_toTopOf="@+id/bookedCounsellorImg"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+    <TextView
+        android:id="@+id/bookedCounsellorRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:text="TextView"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintLeft_toRightOf="@id/bookedCounsellorImg"
+        app:layout_constraintTop_toBottomOf="@id/bookedCounsellorName"/>
+
+    <TextView
+        android:id="@+id/bookedCounsellorPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:text="TextView"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintLeft_toRightOf="@id/bookedCounsellorImg"
+        app:layout_constraintTop_toBottomOf="@id/bookedCounsellorRating"/>
+
+    <ImageButton
+        android:id="@+id/bookedViewDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/bookedCounsellorImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bookedCounsellorImg"
+        app:srcCompat="@drawable/baseline_keyboard_arrow_right_24"
+        android:background="?android:attr/selectableItemBackground"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
